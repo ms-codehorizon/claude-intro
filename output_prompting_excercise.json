@@ -1,0 +1,70 @@
+[
+  {
+    "output": "```json\n[\n  \"cognitive neuroscience\",\n  \"neural plasticity\",\n  \"computational interventions\",\n  \"machine learning algorithms\",\n  \"fMRI data\",\n  \"learning capacity\",\n  \"dopamine regulation\",\n  \"prefrontal cortex\",\n  \"technology adoption\",\n  \"brain-computer interfaces\",\n  \"deep neural networks\",\n  \"rehabilitation therapy\",\n  \"motor cortex damage\",\n  \"motor function recovery\",\n  \"adaptive AI systems\",\n  \"neural feedback\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in cognitive neuroscience have demonstrated that neural plasticity can be enhanced through targeted computational interventions. Specifically, machine learning algorithms trained on fMRI data have enabled researchers to predict individual differences in learning capacity with 87% accuracy, revealing that dopamine regulation in the prefrontal cortex correlates strongly with technology adoption rates. Furthermore, brain-computer interfaces utilizing deep neural networks have shown promise in rehabilitation therapy, where patients with motor cortex damage exhibited 62% improvement in motor function recovery when paired with adaptive AI systems that personalized stimulus intensity based on real-time neural feedback patterns."
+      },
+      "solution_criteria": [
+        "Extracts topics spanning psychology, neuroscience, and technology domains",
+        "Identifies all major topics mentioned without duplication",
+        "Returns results as a JSON array of strings"
+      ],
+      "task_description": " \n    Extract topics out of a passage of text from scholarly article into JSON array of strings\n    ",
+      "scenario": "Testing with interdisciplinary passage containing mixed topics (psychology, neuroscience, and technology) to verify accurate topic extraction across domain boundaries"
+    },
+    "score": 10,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it returns a valid JSON array of strings containing topics from the article with no extra commentary. It meets the secondary criteria by extracting topics spanning all three required domains (psychology, neuroscience, technology), identifying all major topics without duplication. The extraction is accurate and comprehensive, capturing key concepts like cognitive neuroscience, neural plasticity, machine learning, fMRI, dopamine regulation, brain-computer interfaces, and rehabilitation therapy. Minor variations in phrase specificity (e.g., 'technology adoption' vs 'technology adoption rates') are negligible and do not impact the quality of topic extraction."
+  },
+  {
+    "output": "```json\n[\n  \"CRISPR-Cas9 gene editing\",\n  \"monogenic disorders\",\n  \"ex vivo modification\",\n  \"hematopoietic stem cells (HSCs)\",\n  \"dual sgRNA targeting\",\n  \"off-target effects\",\n  \"deep sequencing analysis\",\n  \"on-target specificity\",\n  \"primary human cells\",\n  \"HDR (homology-directed repair)\",\n  \"donor DNA sequences\",\n  \"correction efficiency\",\n  \"\u03b2-thalassemia\",\n  \"base editing technology\",\n  \"adenine base editors (ABEs)\",\n  \"cytosine base editors (CBEs)\",\n  \"DSBs (double-strand breaks)\",\n  \"p53-mediated apoptosis\",\n  \"chromosomal rearrangements\",\n  \"clinical translation\",\n  \"manufacturing scalability\",\n  \"immunogenicity assessment\",\n  \"cell engraftment kinetics\",\n  \"immunocompromised xenograft models\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in CRISPR-Cas9 gene editing have demonstrated significant potential for treating monogenic disorders through ex vivo modification of patient-derived hematopoietic stem cells (HSCs). The mechanism relies on dual sgRNA targeting to minimize off-target effects, with deep sequencing analysis revealing >99.5% on-target specificity in primary human cells. Additionally, integration of HDR (homology-directed repair) templates with optimized donor DNA sequences has improved correction efficiency from 15% to 67% in \u03b2-thalassemia models. Concurrent developments in base editing technology, particularly adenine base editors (ABEs) and cytosine base editors (CBEs), circumvent the need for DSBs (double-strand breaks), thereby reducing p53-mediated apoptosis and chromosomal rearrangements. Clinical translation efforts now focus on manufacturing scalability, immunogenicity assessment of modified cells, and long-term engraftment kinetics in immunocompromised xenograft models."
+      },
+      "solution_criteria": [
+        "Identifies all major research topics despite high concentration of technical terminology and acronyms",
+        "Extracts topics as distinct, meaningful concepts rather than individual terms",
+        "Returns output as a valid JSON array of strings"
+      ],
+      "task_description": " \n    Extract topics out of a passage of text from scholarly article into JSON array of strings\n    ",
+      "scenario": "Testing with highly specialized academic text using domain-specific jargon and acronyms to ensure topics are identified despite technical language density"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it returns a valid JSON array containing only topic strings with no extra commentary. It meets the secondary criteria by identifying all major research topics despite the high concentration of technical terminology and acronyms, and by extracting distinct, meaningful concepts. The extraction is thorough and accurate, covering CRISPR mechanisms, applications, improvements, alternative technologies, and clinical translation aspects. While there is minor room for optimization in topic granularity (some entries could be consolidated as sub-topics of broader concepts already listed), this does not constitute a deficiency against the stated criteria, which ask for topics to be 'distinct and meaningful' - both consolidated and separated approaches satisfy this requirement. The solution demonstrates strong comprehension of the scholarly content."
+  },
+  {
+    "output": "```json\n[\n  \"quantum entanglement\",\n  \"locality\",\n  \"determinism\",\n  \"Bell test violations\",\n  \"hidden variable theories\",\n  \"measurement problem\",\n  \"quantum computing\",\n  \"superposition\",\n  \"computational advantage\",\n  \"quantum cryptography\",\n  \"encryption protocols\",\n  \"nature of reality\",\n  \"quantum systems\",\n  \"observation\",\n  \"foundational physics\",\n  \"epistemology\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The epistemological implications of quantum entanglement challenge classical assumptions about locality and determinism, yet contemporary interpretations remain contested. Recent experimental validations using Bell test violations have strengthened the case against hidden variable theories, though the measurement problem persists as a fundamental unresolved question. Simultaneously, practical applications in quantum computing leverage superposition and entanglement for computational advantage, while quantum cryptography exploits these phenomena for theoretically unbreakable encryption protocols. The philosophical debate surrounding the nature of reality itself\u2014whether quantum systems possess definite properties independent of observation\u2014intersects with these technical developments, suggesting that foundational questions about the universe's structure remain intimately connected to engineering innovations and epistemological frameworks."
+      },
+      "solution_criteria": [
+        "Identifies implicit topics that require contextual understanding (e.g., measurement problem, hidden variable theories, observation-dependent reality) rather than relying solely on explicit keyword matching",
+        "Captures both theoretical/philosophical dimensions and practical applications mentioned in the passage",
+        "Includes core subject areas even when expressed through indirect language or examples"
+      ],
+      "task_description": " \n    Extract topics out of a passage of text from scholarly article into JSON array of strings\n    ",
+      "scenario": "Testing with a passage containing implicit and subtle topics that require contextual understanding rather than explicit keyword matching"
+    },
+    "score": 8,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it provides a valid JSON array containing only topic strings with no extraneous commentary. Regarding secondary criteria, it demonstrates strong performance in identifying implicit topics (measurement problem, hidden variable theories, observation-dependent reality) and balances theoretical/philosophical dimensions with practical applications. The extraction shows contextual understanding rather than mere keyword matching. Minor weaknesses include the omission of 'quantum interpretations' as an explicit topic and slight imprecision in phrasing 'computational advantage' without the 'quantum' qualifier. These are minor gaps that do not significantly detract from overall quality."
+  },
+  {
+    "output": "```json\n[\n  \"CRISPR-Cas9 gene editing\",\n  \"hereditary retinal dystrophies\",\n  \"clinical trials\",\n  \"adeno-associated viral vectors\",\n  \"subretinal injections\",\n  \"CEP290 gene mutations\",\n  \"light sensitivity\",\n  \"visual acuity\",\n  \"adverse events\",\n  \"gene therapy efficacy\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "This study examines the role of CRISPR-Cas9 gene editing in treating hereditary retinal dystrophies. We conducted a systematic review of 23 clinical trials spanning 2018-2023, analyzing the efficacy of subretinal injections of adeno-associated viral vectors carrying CRISPR components targeting mutations in the CEP290 gene. Our results demonstrate that patients receiving CRISPR therapy showed measurable improvements in light sensitivity and visual acuity over 12-month follow-up periods, with no serious adverse events reported during the observation window."
+      },
+      "solution_criteria": [
+        "Identifies the primary topic (CRISPR-Cas9 gene editing) without omission",
+        "Does not hallucinate or invent topics not explicitly mentioned in the passage",
+        "Extracts only the core subjects directly discussed in the text"
+      ],
+      "task_description": " \n    Extract topics out of a passage of text from scholarly article into JSON array of strings\n    ",
+      "scenario": "Testing with a short, focused passage on a single narrow topic to verify the prompt correctly identifies the core subject without over-generating or hallucinating additional topics"
+    },
+    "score": 9,
+    "reasoning": "The solution meets all mandatory requirements: it provides a valid JSON array of strings containing topics from the article with no extra commentary. It successfully identifies the primary topic (CRISPR-Cas9 gene editing) and extracts core subjects directly discussed in the text. The only minor issue is 'gene therapy efficacy,' which appears to be a synthesized topic combining concepts from the passage rather than an explicitly stated topic. However, this is a borderline case since the passage does discuss both 'gene therapy' (implied through CRISPR therapy) and 'efficacy' (explicitly mentioned). All other topics are clearly present in the source material. The solution demonstrates strong adherence to the stated criteria."
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "output": "# One-Day Marathon Race Day Preparation Meal Plan\n**Athlete: 178 cm, 68 kg | Vegetarian, Dairy-Free | Marathon Carb-Loading**\n\n---\n\n## Daily Nutritional Targets\n- **Calories:** 3,100-3,400 kcal\n- **Protein:** 95-110g (12-13%)\n- **Carbohydrates:** 520-560g (65-68%)\n- **Fat:** 75-85g (22-25%)\n\n*Optimized for race-day carb-loading with sustained energy and electrolyte balance*\n\n---\n\n## MEAL PLAN\n\n### **BREAKFAST** (6:30 AM)\n*Pre-race fuel - easily digestible carbs*\n- White bread: 100g\n- Almond butter: 25g\n- Banana: 150g\n- Maple syrup: 20g\n- Orange juice (freshly squeezed): 250ml\n\n**Macros:** 620 cal | 12g protein | 115g carbs | 12g fat\n\n---\n\n### **MID-MORNING SNACK** (9:00 AM)\n*Quick energy boost*\n- Rice cakes: 50g\n- Jam (fruit): 40g\n- Dates (pitted): 80g\n- Sports drink (6% carbs, electrolyte): 400ml\n\n**Macros:** 420 cal | 4g protein | 105g carbs | 1g fat\n\n---\n\n### **LUNCH** (12:00 PM)\n*Carb-loading focus with plant protein*\n- White pasta: 220g cooked\n- Marinara sauce (oil-based): 150g\n- Chickpeas: 120g cooked\n- Olive oil: 10ml\n- White bread roll: 60g\n- Coconut water: 250ml\n\n**Macros:** 780 cal | 22g protein | 135g carbs | 14g fat\n\n---\n\n### **AFTERNOON SNACK** (3:00 PM)\n*Sustained energy with electrolytes*\n- Bagel (plain): 85g\n- Honey: 30g\n- Raisins: 50g\n- Banana: 120g\n- Electrolyte drink (sodium-enriched): 500ml\n\n**Macros:** 520 cal | 12g protein | 120g carbs | 3g fat\n\n---\n\n### **EARLY DINNER** (5:30 PM)\n*Light, easily digestible carbs - 3 hours before race*\n- White rice: 250g cooked\n- Lentil curry (coconut milk-based): 200g\n- Vegetable broth: 150ml\n- Olive oil: 8ml\n- Steamed carrots: 100g\n- Coconut water: 250ml\n\n**Macros:** 680 cal | 18g protein | 125g carbs | 12g fat\n\n---\n\n### **EVENING SNACK** (8:00 PM)\n*Final carb-loading before sleep*\n- Pretzels: 60g\n- Apple: 150g\n- Almond butter: 15g\n- Herbal tea with honey: 250ml + 15g honey\n\n**Macros:** 380 cal | 8g protein | 60g carbs | 8g fat\n\n---\n\n## **DAILY TOTALS**\n- **Calories:** 3,380 kcal \u2713\n- **Protein:** 76g (9%)\n- **Carbohydrates:** 660g (78%)\n- **Fat:** 50g (13%)\n\n---\n\n## **RACE-DAY SPECIFIC NOTES**\n\n### **Hydration Strategy**\n- Water: 3.5-4 liters throughout day\n- Electrolyte drinks: 1.5 liters (sodium 300-500mg per liter)\n- Coconut water: 750ml (natural electrolytes)\n- **Stop all fluids 2 hours before race start**\n\n### **Electrolyte Balance**\n- Sodium: ~1,200-1,500mg (from sports drinks, pretzels, broth)",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178 cm",
+        "weight": "68 kg",
+        "goal": "Marathon race day preparation with carb-loading and electrolyte balance",
+        "restrictions": "Vegetarian, no dairy"
+      },
+      "solution_criteria": [
+        "Meal plan covers full day with breakfast, lunch, dinner, and snacks",
+        "Emphasizes carbohydrate-rich foods appropriate for marathon carb-loading",
+        "Includes electrolyte sources (sodium, potassium) for hydration balance",
+        "Respects vegetarian and dairy-free dietary restrictions"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a specific sport discipline: create a 1-day meal plan for a competitive marathon runner focusing on carb-loading and electrolyte balance"
+    },
+    "score": 7,
+    "reasoning": "The solution fully satisfies all three mandatory requirements with clear daily totals, detailed macronutrient breakdowns, and specific meals with portions and timing. It strongly addresses the secondary criteria by emphasizing carb-loading, respecting dietary restrictions, and including electrolyte sources. However, the discrepancy between stated nutritional targets and actual delivery, combined with the carbohydrate percentage exceeding typical recommendations, represents a meaningful deficiency in nutritional precision for an athlete-focused plan. The solution is well-organized and practical but contains internal inconsistencies that prevent a higher score."
+  },
+  {
+    "output": "# One-Day Vegan Muscle Building Meal Plan\n**Athlete: 180 cm, 85 kg | Muscle Building Phase**\n\n---\n\n## Daily Nutritional Targets\n- **Calories:** 3,100-3,300 kcal\n- **Protein:** 155-170g (20%)\n- **Carbohydrates:** 465-495g (60%)\n- **Fat:** 75-85g (25%)\n\n---\n\n## MEAL PLAN\n\n### **BREAKFAST** (7:00 AM)\n*Muscle-building start*\n- Oatmeal (dry): 100g\n- Soy milk: 300ml\n- Hemp seeds: 20g\n- Banana: 150g\n- Almond butter: 25g\n- Maple syrup: 15g\n\n**Macros:** 620 cal | 22g protein | 85g carbs | 18g fat\n\n---\n\n### **MID-MORNING SNACK** (10:00 AM)\n*Post-workout recovery*\n- Vegan protein powder (pea/rice blend): 30g\n- Oat milk: 250ml\n- Blueberries: 120g\n- Chia seeds: 15g\n\n**Macros:** 320 cal | 28g protein | 35g carbs | 8g fat\n\n---\n\n### **LUNCH** (1:00 PM)\n*Protein-rich main meal*\n- Cooked lentils: 200g\n- Quinoa (cooked): 150g\n- Tofu (firm, pan-fried): 150g\n- Olive oil: 12ml\n- Mixed vegetables (spinach, bell peppers, carrots): 200g\n- Tahini dressing: 15g\n\n**Macros:** 780 cal | 38g protein | 95g carbs | 20g fat\n\n---\n\n### **AFTERNOON SNACK** (4:00 PM)\n*Energy & protein boost*\n- Hummus: 80g\n- Whole grain pita bread: 80g\n- Raw almonds: 30g\n- Apple: 180g\n\n**Macros:** 480 cal | 16g protein | 58g carbs | 18g fat\n\n---\n\n### **DINNER** (7:00 PM)\n*Evening muscle recovery*\n- Chickpea pasta (cooked): 180g\n- Tempeh (steamed & seasoned): 120g\n- Marinara sauce: 150g\n- Nutritional yeast: 15g\n- Olive oil: 10ml\n- Roasted broccoli: 150g\n\n**Macros:** 650 cal | 35g protein | 82g carbs | 16g fat\n\n---\n\n### **EVENING SNACK** (9:30 PM)\n*Before bed recovery*\n- Cashew butter: 30g\n- Whole grain bread: 60g\n- Fortified plant milk: 200ml\n\n**Macros:** 380 cal | 16g protein | 42g carbs | 15g fat\n\n---\n\n## **DAILY TOTALS**\n- **Calories:** 3,230 kcal \u2713\n- **Protein:** 155g (19%)\n- **Carbohydrates:** 397g (49%)\n- **Fat:** 95g (26%)\n\n---\n\n## **KEY VEGAN PROTEIN SOURCES USED**\n- Legumes (lentils, chickpeas): 15-20g protein per 100g cooked\n- Tofu & tempeh: 15-19g protein per 100g\n- Quinoa: Complete amino acid profile\n- Hemp & chia seeds: Omega-3s + protein\n- Vegan protein powder: 25-30g per serving\n- Nuts & nut butters: Protein + healthy fats\n- Nutritional yeast: B12 + 8g protein per 2 tbsp\n\n---\n\n## **HYDRATION NOTES**\n- Water: 3.5-4 liters throughout day\n- Herbal tea: 2-3 cups\n- Electrolyte drink post-workout (optional)\n\n## **SUPPLEMENTATION",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180",
+        "weight": "85",
+        "goal": "muscle building with high protein intake",
+        "restrictions": "vegan (no animal products)"
+      },
+      "solution_criteria": [
+        "Meal plan covers exactly 1 day with breakfast, lunch, dinner, and snacks",
+        "All foods are vegan with no animal products",
+        "Protein intake is high (minimum 140g daily for 85kg athlete)",
+        "Plan is compact and concise (no excessive detail)"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with dietary restrictions: generate a meal plan for a vegan bodybuilder requiring high protein intake within plant-based food constraints"
+    },
+    "score": 8,
+    "reasoning": "The solution fully satisfies all mandatory requirements with precise daily totals, macronutrient breakdowns, and detailed meals with portions and timing. It meets secondary criteria by covering all meal types (breakfast, lunch, dinner, snacks) for exactly 1 day, maintaining strict vegan compliance, and achieving high protein intake (155g). The carb percentage is slightly below target but remains adequate. The incomplete supplementation section and somewhat verbose formatting are minor issues that don't undermine the core deliverable. The meal plan is practical, well-structured, and appropriately tailored to the athlete's specifications."
+  },
+  {
+    "output": "# One-Day Soccer Training Meal Plan\n**Athlete: 183 cm, 78 kg | Evening Soccer Practice + Full Class Schedule**\n\n---\n\n## Daily Nutritional Targets\n- **Calories:** 2,800-3,000 kcal\n- **Protein:** 110-120g (15%)\n- **Carbohydrates:** 420-450g (56%)\n- **Fat:** 78-85g (25%)\n\n---\n\n## MEAL PLAN\n\n### **BREAKFAST** (7:00 AM)\n*Morning energy for classes*\n- Oatmeal: 70g dry\n- Banana: 120g\n- Whole milk: 250ml\n- Honey: 20g\n- Sunflower seeds: 15g\n\n**Macros:** 520 cal | 16g protein | 82g carbs | 12g fat\n\n---\n\n### **MID-MORNING SNACK** (10:30 AM)\n*Between classes*\n- Greek yogurt (plain): 200g\n- Granola (nut-free): 40g\n- Strawberries: 100g\n\n**Macros:** 280 cal | 18g protein | 38g carbs | 5g fat\n\n---\n\n### **LUNCH** (1:00 PM)\n*Main midday meal*\n- Chickpea and vegetable curry: 300g\n- White rice: 180g cooked\n- Whole wheat bread: 50g\n- Olive oil (in cooking): 10ml\n- Cucumber salad: 100g\n\n**Macros:** 720 cal | 22g protein | 115g carbs | 16g fat\n\n---\n\n### **AFTERNOON SNACK** (3:30 PM)\n*Pre-practice fuel (2.5 hours before soccer)*\n- Whole wheat toast: 60g\n- Hummus: 40g\n- Carrot sticks: 80g\n- Apple: 150g\n- Sports drink (6% carbs): 400ml\n\n**Macros:** 480 cal | 12g protein | 92g carbs | 8g fat\n\n---\n\n### **DINNER** (6:00 PM)\n*Light pre-soccer meal (1 hour before practice)*\n- Lentil pasta: 150g cooked\n- Marinara sauce: 120g\n- Spinach: 80g\n- Parmesan cheese: 15g\n- Olive oil: 5ml\n\n**Macros:** 420 cal | 20g protein | 68g carbs | 8g fat\n\n---\n\n### **POST-PRACTICE SNACK** (8:30 PM)\n*Recovery after soccer*\n- Chocolate milk (low-fat): 300ml\n- Banana: 100g\n- Whole grain crackers: 40g\n\n**Macros:** 380 cal | 12g protein | 68g carbs | 6g fat\n\n---\n\n## **DAILY TOTALS**\n- **Calories:** 2,880 kcal \u2713\n- **Protein:** 100g (14%)\n- **Carbohydrates:** 463g (64%)\n- **Fat:** 55g (17%)\n\n---\n\n## **HYDRATION NOTES**\n- Water: 3-3.5 liters throughout day\n- Sports drink (400ml) consumed 2.5 hours before practice\n- Water bottle during soccer practice (500-750ml)\n- Recovery drink post-practice for muscle repair\n\n## **TIMING TIPS**\n- Breakfast fuels morning classes\n- Light snacks between classes prevent energy crashes\n- Afternoon snack provides sustained energy through final classes\n- Dinner is light and easily digestible 1 hour before practice\n- Post-practice meal within 30-45 minutes aids recovery\n- Avoid heavy meals 2-3 hours before soccer to prevent cramping\n\n## **BUDGET-FRIENDLY NOTES**\n- Dried lentils and chickpeas are economical protein sources\n- Seasonal fruits (bananas, apples, strawberries) reduce costs\n- Whole grains in bulk are budget-conscious\n- Greek yogurt offers better protein-to-cost ratio than specialty products",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "183 cm",
+        "weight": "78 kg",
+        "goal": "maintain energy levels for evening soccer practice while managing a full class schedule",
+        "restrictions": "vegetarian, no nuts"
+      },
+      "solution_criteria": [
+        "Meal plan is achievable with minimal cooking time and uses campus dining facilities",
+        "Plan includes 3 meals plus snacks appropriate for a 78 kg athlete with moderate-to-high activity",
+        "All meals comply with vegetarian and nut-free restrictions",
+        "Plan is formatted as a single day schedule with specific meal suggestions"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with time constraints and practicality: design a meal plan for a busy college soccer player with limited cooking time and access to campus dining facilities"
+    },
+    "score": 7,
+    "reasoning": "The solution fully satisfies all three mandatory requirements with precise daily caloric total, detailed macronutrient breakdown, and specific meals with portions and timing. It appropriately addresses vegetarian and nut-free restrictions and provides a logical single-day schedule. However, it has notable deficiencies in the secondary criteria: the campus dining feasibility is assumed rather than explicitly addressed, cooking time requirements are not discussed despite being a stated criterion, and the actual macronutrient delivery falls short of the stated targets. These are meaningful gaps in meeting the secondary criteria, though not fatal since mandatory requirements are met."
+  }
+]

@@ -1,0 +1,260 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">4</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">9.0 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">100.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Testing with interdisciplinary passage containing mixed topics (psychology, neuroscience, and technology) to verify accurate topic extraction across domain boundaries</td>
+                <td class="prompt-inputs"><strong>content:</strong> Recent advances in cognitive neuroscience have demonstrated that neural plasticity can be enhanced through targeted computational interventions. Specifically, machine learning algorithms trained on fMRI data have enabled researchers to predict individual differences in learning capacity with 87% accuracy, revealing that dopamine regulation in the prefrontal cortex correlates strongly with technology adoption rates. Furthermore, brain-computer interfaces utilizing deep neural networks have shown promise in rehabilitation therapy, where patients with motor cortex damage exhibited 62% improvement in motor function recovery when paired with adaptive AI systems that personalized stimulus intensity based on real-time neural feedback patterns.</td>
+                <td class="criteria">• Extracts topics spanning psychology, neuroscience, and technology domains<br>• Identifies all major topics mentioned without duplication<br>• Returns results as a JSON array of strings</td>
+                <td class="output"><pre>```json
+[
+  "cognitive neuroscience",
+  "neural plasticity",
+  "computational interventions",
+  "machine learning algorithms",
+  "fMRI data",
+  "learning capacity",
+  "dopamine regulation",
+  "prefrontal cortex",
+  "technology adoption",
+  "brain-computer interfaces",
+  "deep neural networks",
+  "rehabilitation therapy",
+  "motor cortex damage",
+  "motor function recovery",
+  "adaptive AI systems",
+  "neural feedback"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">10</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it returns a valid JSON array of strings containing topics from the article with no extra commentary. It meets the secondary criteria by extracting topics spanning all three required domains (psychology, neuroscience, technology), identifying all major topics without duplication. The extraction is accurate and comprehensive, capturing key concepts like cognitive neuroscience, neural plasticity, machine learning, fMRI, dopamine regulation, brain-computer interfaces, and rehabilitation therapy. Minor variations in phrase specificity (e.g., 'technology adoption' vs 'technology adoption rates') are negligible and do not impact the quality of topic extraction.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with highly specialized academic text using domain-specific jargon and acronyms to ensure topics are identified despite technical language density</td>
+                <td class="prompt-inputs"><strong>content:</strong> Recent advances in CRISPR-Cas9 gene editing have demonstrated significant potential for treating monogenic disorders through ex vivo modification of patient-derived hematopoietic stem cells (HSCs). The mechanism relies on dual sgRNA targeting to minimize off-target effects, with deep sequencing analysis revealing >99.5% on-target specificity in primary human cells. Additionally, integration of HDR (homology-directed repair) templates with optimized donor DNA sequences has improved correction efficiency from 15% to 67% in β-thalassemia models. Concurrent developments in base editing technology, particularly adenine base editors (ABEs) and cytosine base editors (CBEs), circumvent the need for DSBs (double-strand breaks), thereby reducing p53-mediated apoptosis and chromosomal rearrangements. Clinical translation efforts now focus on manufacturing scalability, immunogenicity assessment of modified cells, and long-term engraftment kinetics in immunocompromised xenograft models.</td>
+                <td class="criteria">• Identifies all major research topics despite high concentration of technical terminology and acronyms<br>• Extracts topics as distinct, meaningful concepts rather than individual terms<br>• Returns output as a valid JSON array of strings</td>
+                <td class="output"><pre>```json
+[
+  "CRISPR-Cas9 gene editing",
+  "monogenic disorders",
+  "ex vivo modification",
+  "hematopoietic stem cells (HSCs)",
+  "dual sgRNA targeting",
+  "off-target effects",
+  "deep sequencing analysis",
+  "on-target specificity",
+  "primary human cells",
+  "HDR (homology-directed repair)",
+  "donor DNA sequences",
+  "correction efficiency",
+  "β-thalassemia",
+  "base editing technology",
+  "adenine base editors (ABEs)",
+  "cytosine base editors (CBEs)",
+  "DSBs (double-strand breaks)",
+  "p53-mediated apoptosis",
+  "chromosomal rearrangements",
+  "clinical translation",
+  "manufacturing scalability",
+  "immunogenicity assessment",
+  "cell engraftment kinetics",
+  "immunocompromised xenograft models"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it returns a valid JSON array containing only topic strings with no extra commentary. It meets the secondary criteria by identifying all major research topics despite the high concentration of technical terminology and acronyms, and by extracting distinct, meaningful concepts. The extraction is thorough and accurate, covering CRISPR mechanisms, applications, improvements, alternative technologies, and clinical translation aspects. While there is minor room for optimization in topic granularity (some entries could be consolidated as sub-topics of broader concepts already listed), this does not constitute a deficiency against the stated criteria, which ask for topics to be 'distinct and meaningful' - both consolidated and separated approaches satisfy this requirement. The solution demonstrates strong comprehension of the scholarly content.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a passage containing implicit and subtle topics that require contextual understanding rather than explicit keyword matching</td>
+                <td class="prompt-inputs"><strong>content:</strong> The epistemological implications of quantum entanglement challenge classical assumptions about locality and determinism, yet contemporary interpretations remain contested. Recent experimental validations using Bell test violations have strengthened the case against hidden variable theories, though the measurement problem persists as a fundamental unresolved question. Simultaneously, practical applications in quantum computing leverage superposition and entanglement for computational advantage, while quantum cryptography exploits these phenomena for theoretically unbreakable encryption protocols. The philosophical debate surrounding the nature of reality itself—whether quantum systems possess definite properties independent of observation—intersects with these technical developments, suggesting that foundational questions about the universe's structure remain intimately connected to engineering innovations and epistemological frameworks.</td>
+                <td class="criteria">• Identifies implicit topics that require contextual understanding (e.g., measurement problem, hidden variable theories, observation-dependent reality) rather than relying solely on explicit keyword matching<br>• Captures both theoretical/philosophical dimensions and practical applications mentioned in the passage<br>• Includes core subject areas even when expressed through indirect language or examples</td>
+                <td class="output"><pre>```json
+[
+  "quantum entanglement",
+  "locality",
+  "determinism",
+  "Bell test violations",
+  "hidden variable theories",
+  "measurement problem",
+  "quantum computing",
+  "superposition",
+  "computational advantage",
+  "quantum cryptography",
+  "encryption protocols",
+  "nature of reality",
+  "quantum systems",
+  "observation",
+  "foundational physics",
+  "epistemology"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it provides a valid JSON array containing only topic strings with no extraneous commentary. Regarding secondary criteria, it demonstrates strong performance in identifying implicit topics (measurement problem, hidden variable theories, observation-dependent reality) and balances theoretical/philosophical dimensions with practical applications. The extraction shows contextual understanding rather than mere keyword matching. Minor weaknesses include the omission of 'quantum interpretations' as an explicit topic and slight imprecision in phrasing 'computational advantage' without the 'quantum' qualifier. These are minor gaps that do not significantly detract from overall quality.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a short, focused passage on a single narrow topic to verify the prompt correctly identifies the core subject without over-generating or hallucinating additional topics</td>
+                <td class="prompt-inputs"><strong>content:</strong> This study examines the role of CRISPR-Cas9 gene editing in treating hereditary retinal dystrophies. We conducted a systematic review of 23 clinical trials spanning 2018-2023, analyzing the efficacy of subretinal injections of adeno-associated viral vectors carrying CRISPR components targeting mutations in the CEP290 gene. Our results demonstrate that patients receiving CRISPR therapy showed measurable improvements in light sensitivity and visual acuity over 12-month follow-up periods, with no serious adverse events reported during the observation window.</td>
+                <td class="criteria">• Identifies the primary topic (CRISPR-Cas9 gene editing) without omission<br>• Does not hallucinate or invent topics not explicitly mentioned in the passage<br>• Extracts only the core subjects directly discussed in the text</td>
+                <td class="output"><pre>```json
+[
+  "CRISPR-Cas9 gene editing",
+  "hereditary retinal dystrophies",
+  "clinical trials",
+  "adeno-associated viral vectors",
+  "subretinal injections",
+  "CEP290 gene mutations",
+  "light sensitivity",
+  "visual acuity",
+  "adverse events",
+  "gene therapy efficacy"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution meets all mandatory requirements: it provides a valid JSON array of strings containing topics from the article with no extra commentary. It successfully identifies the primary topic (CRISPR-Cas9 gene editing) and extracts core subjects directly discussed in the text. The only minor issue is 'gene therapy efficacy,' which appears to be a synthesized topic combining concepts from the passage rather than an explicitly stated topic. However, this is a borderline case since the passage does discuss both 'gene therapy' (implied through CRISPR therapy) and 'efficacy' (explicitly mentioned). All other topics are clearly present in the source material. The solution demonstrates strong adherence to the stated criteria.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

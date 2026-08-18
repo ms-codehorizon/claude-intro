@@ -1,0 +1,498 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">3</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">7.3 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">100.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Testing with a specific sport discipline: create a 1-day meal plan for a competitive marathon runner focusing on carb-loading and electrolyte balance</td>
+                <td class="prompt-inputs"><strong>height:</strong> 178 cm<br><strong>weight:</strong> 68 kg<br><strong>goal:</strong> Marathon race day preparation with carb-loading and electrolyte balance<br><strong>restrictions:</strong> Vegetarian, no dairy</td>
+                <td class="criteria">• Meal plan covers full day with breakfast, lunch, dinner, and snacks<br>• Emphasizes carbohydrate-rich foods appropriate for marathon carb-loading<br>• Includes electrolyte sources (sodium, potassium) for hydration balance<br>• Respects vegetarian and dairy-free dietary restrictions</td>
+                <td class="output"><pre># One-Day Marathon Race Day Preparation Meal Plan
+**Athlete: 178 cm, 68 kg | Vegetarian, Dairy-Free | Marathon Carb-Loading**
+
+---
+
+## Daily Nutritional Targets
+- **Calories:** 3,100-3,400 kcal
+- **Protein:** 95-110g (12-13%)
+- **Carbohydrates:** 520-560g (65-68%)
+- **Fat:** 75-85g (22-25%)
+
+*Optimized for race-day carb-loading with sustained energy and electrolyte balance*
+
+---
+
+## MEAL PLAN
+
+### **BREAKFAST** (6:30 AM)
+*Pre-race fuel - easily digestible carbs*
+- White bread: 100g
+- Almond butter: 25g
+- Banana: 150g
+- Maple syrup: 20g
+- Orange juice (freshly squeezed): 250ml
+
+**Macros:** 620 cal | 12g protein | 115g carbs | 12g fat
+
+---
+
+### **MID-MORNING SNACK** (9:00 AM)
+*Quick energy boost*
+- Rice cakes: 50g
+- Jam (fruit): 40g
+- Dates (pitted): 80g
+- Sports drink (6% carbs, electrolyte): 400ml
+
+**Macros:** 420 cal | 4g protein | 105g carbs | 1g fat
+
+---
+
+### **LUNCH** (12:00 PM)
+*Carb-loading focus with plant protein*
+- White pasta: 220g cooked
+- Marinara sauce (oil-based): 150g
+- Chickpeas: 120g cooked
+- Olive oil: 10ml
+- White bread roll: 60g
+- Coconut water: 250ml
+
+**Macros:** 780 cal | 22g protein | 135g carbs | 14g fat
+
+---
+
+### **AFTERNOON SNACK** (3:00 PM)
+*Sustained energy with electrolytes*
+- Bagel (plain): 85g
+- Honey: 30g
+- Raisins: 50g
+- Banana: 120g
+- Electrolyte drink (sodium-enriched): 500ml
+
+**Macros:** 520 cal | 12g protein | 120g carbs | 3g fat
+
+---
+
+### **EARLY DINNER** (5:30 PM)
+*Light, easily digestible carbs - 3 hours before race*
+- White rice: 250g cooked
+- Lentil curry (coconut milk-based): 200g
+- Vegetable broth: 150ml
+- Olive oil: 8ml
+- Steamed carrots: 100g
+- Coconut water: 250ml
+
+**Macros:** 680 cal | 18g protein | 125g carbs | 12g fat
+
+---
+
+### **EVENING SNACK** (8:00 PM)
+*Final carb-loading before sleep*
+- Pretzels: 60g
+- Apple: 150g
+- Almond butter: 15g
+- Herbal tea with honey: 250ml + 15g honey
+
+**Macros:** 380 cal | 8g protein | 60g carbs | 8g fat
+
+---
+
+## **DAILY TOTALS**
+- **Calories:** 3,380 kcal ✓
+- **Protein:** 76g (9%)
+- **Carbohydrates:** 660g (78%)
+- **Fat:** 50g (13%)
+
+---
+
+## **RACE-DAY SPECIFIC NOTES**
+
+### **Hydration Strategy**
+- Water: 3.5-4 liters throughout day
+- Electrolyte drinks: 1.5 liters (sodium 300-500mg per liter)
+- Coconut water: 750ml (natural electrolytes)
+- **Stop all fluids 2 hours before race start**
+
+### **Electrolyte Balance**
+- Sodium: ~1,200-1,500mg (from sports drinks, pretzels, broth)</pre></td>
+                <td class="score-col"><span class="score score-medium">7</span></td>
+                <td class="reasoning">The solution fully satisfies all three mandatory requirements with clear daily totals, detailed macronutrient breakdowns, and specific meals with portions and timing. It strongly addresses the secondary criteria by emphasizing carb-loading, respecting dietary restrictions, and including electrolyte sources. However, the discrepancy between stated nutritional targets and actual delivery, combined with the carbohydrate percentage exceeding typical recommendations, represents a meaningful deficiency in nutritional precision for an athlete-focused plan. The solution is well-organized and practical but contains internal inconsistencies that prevent a higher score.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with dietary restrictions: generate a meal plan for a vegan bodybuilder requiring high protein intake within plant-based food constraints</td>
+                <td class="prompt-inputs"><strong>height:</strong> 180<br><strong>weight:</strong> 85<br><strong>goal:</strong> muscle building with high protein intake<br><strong>restrictions:</strong> vegan (no animal products)</td>
+                <td class="criteria">• Meal plan covers exactly 1 day with breakfast, lunch, dinner, and snacks<br>• All foods are vegan with no animal products<br>• Protein intake is high (minimum 140g daily for 85kg athlete)<br>• Plan is compact and concise (no excessive detail)</td>
+                <td class="output"><pre># One-Day Vegan Muscle Building Meal Plan
+**Athlete: 180 cm, 85 kg | Muscle Building Phase**
+
+---
+
+## Daily Nutritional Targets
+- **Calories:** 3,100-3,300 kcal
+- **Protein:** 155-170g (20%)
+- **Carbohydrates:** 465-495g (60%)
+- **Fat:** 75-85g (25%)
+
+---
+
+## MEAL PLAN
+
+### **BREAKFAST** (7:00 AM)
+*Muscle-building start*
+- Oatmeal (dry): 100g
+- Soy milk: 300ml
+- Hemp seeds: 20g
+- Banana: 150g
+- Almond butter: 25g
+- Maple syrup: 15g
+
+**Macros:** 620 cal | 22g protein | 85g carbs | 18g fat
+
+---
+
+### **MID-MORNING SNACK** (10:00 AM)
+*Post-workout recovery*
+- Vegan protein powder (pea/rice blend): 30g
+- Oat milk: 250ml
+- Blueberries: 120g
+- Chia seeds: 15g
+
+**Macros:** 320 cal | 28g protein | 35g carbs | 8g fat
+
+---
+
+### **LUNCH** (1:00 PM)
+*Protein-rich main meal*
+- Cooked lentils: 200g
+- Quinoa (cooked): 150g
+- Tofu (firm, pan-fried): 150g
+- Olive oil: 12ml
+- Mixed vegetables (spinach, bell peppers, carrots): 200g
+- Tahini dressing: 15g
+
+**Macros:** 780 cal | 38g protein | 95g carbs | 20g fat
+
+---
+
+### **AFTERNOON SNACK** (4:00 PM)
+*Energy & protein boost*
+- Hummus: 80g
+- Whole grain pita bread: 80g
+- Raw almonds: 30g
+- Apple: 180g
+
+**Macros:** 480 cal | 16g protein | 58g carbs | 18g fat
+
+---
+
+### **DINNER** (7:00 PM)
+*Evening muscle recovery*
+- Chickpea pasta (cooked): 180g
+- Tempeh (steamed & seasoned): 120g
+- Marinara sauce: 150g
+- Nutritional yeast: 15g
+- Olive oil: 10ml
+- Roasted broccoli: 150g
+
+**Macros:** 650 cal | 35g protein | 82g carbs | 16g fat
+
+---
+
+### **EVENING SNACK** (9:30 PM)
+*Before bed recovery*
+- Cashew butter: 30g
+- Whole grain bread: 60g
+- Fortified plant milk: 200ml
+
+**Macros:** 380 cal | 16g protein | 42g carbs | 15g fat
+
+---
+
+## **DAILY TOTALS**
+- **Calories:** 3,230 kcal ✓
+- **Protein:** 155g (19%)
+- **Carbohydrates:** 397g (49%)
+- **Fat:** 95g (26%)
+
+---
+
+## **KEY VEGAN PROTEIN SOURCES USED**
+- Legumes (lentils, chickpeas): 15-20g protein per 100g cooked
+- Tofu & tempeh: 15-19g protein per 100g
+- Quinoa: Complete amino acid profile
+- Hemp & chia seeds: Omega-3s + protein
+- Vegan protein powder: 25-30g per serving
+- Nuts & nut butters: Protein + healthy fats
+- Nutritional yeast: B12 + 8g protein per 2 tbsp
+
+---
+
+## **HYDRATION NOTES**
+- Water: 3.5-4 liters throughout day
+- Herbal tea: 2-3 cups
+- Electrolyte drink post-workout (optional)
+
+## **SUPPLEMENTATION</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements with precise daily totals, macronutrient breakdowns, and detailed meals with portions and timing. It meets secondary criteria by covering all meal types (breakfast, lunch, dinner, snacks) for exactly 1 day, maintaining strict vegan compliance, and achieving high protein intake (155g). The carb percentage is slightly below target but remains adequate. The incomplete supplementation section and somewhat verbose formatting are minor issues that don't undermine the core deliverable. The meal plan is practical, well-structured, and appropriately tailored to the athlete's specifications.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with time constraints and practicality: design a meal plan for a busy college soccer player with limited cooking time and access to campus dining facilities</td>
+                <td class="prompt-inputs"><strong>height:</strong> 183 cm<br><strong>weight:</strong> 78 kg<br><strong>goal:</strong> maintain energy levels for evening soccer practice while managing a full class schedule<br><strong>restrictions:</strong> vegetarian, no nuts</td>
+                <td class="criteria">• Meal plan is achievable with minimal cooking time and uses campus dining facilities<br>• Plan includes 3 meals plus snacks appropriate for a 78 kg athlete with moderate-to-high activity<br>• All meals comply with vegetarian and nut-free restrictions<br>• Plan is formatted as a single day schedule with specific meal suggestions</td>
+                <td class="output"><pre># One-Day Soccer Training Meal Plan
+**Athlete: 183 cm, 78 kg | Evening Soccer Practice + Full Class Schedule**
+
+---
+
+## Daily Nutritional Targets
+- **Calories:** 2,800-3,000 kcal
+- **Protein:** 110-120g (15%)
+- **Carbohydrates:** 420-450g (56%)
+- **Fat:** 78-85g (25%)
+
+---
+
+## MEAL PLAN
+
+### **BREAKFAST** (7:00 AM)
+*Morning energy for classes*
+- Oatmeal: 70g dry
+- Banana: 120g
+- Whole milk: 250ml
+- Honey: 20g
+- Sunflower seeds: 15g
+
+**Macros:** 520 cal | 16g protein | 82g carbs | 12g fat
+
+---
+
+### **MID-MORNING SNACK** (10:30 AM)
+*Between classes*
+- Greek yogurt (plain): 200g
+- Granola (nut-free): 40g
+- Strawberries: 100g
+
+**Macros:** 280 cal | 18g protein | 38g carbs | 5g fat
+
+---
+
+### **LUNCH** (1:00 PM)
+*Main midday meal*
+- Chickpea and vegetable curry: 300g
+- White rice: 180g cooked
+- Whole wheat bread: 50g
+- Olive oil (in cooking): 10ml
+- Cucumber salad: 100g
+
+**Macros:** 720 cal | 22g protein | 115g carbs | 16g fat
+
+---
+
+### **AFTERNOON SNACK** (3:30 PM)
+*Pre-practice fuel (2.5 hours before soccer)*
+- Whole wheat toast: 60g
+- Hummus: 40g
+- Carrot sticks: 80g
+- Apple: 150g
+- Sports drink (6% carbs): 400ml
+
+**Macros:** 480 cal | 12g protein | 92g carbs | 8g fat
+
+---
+
+### **DINNER** (6:00 PM)
+*Light pre-soccer meal (1 hour before practice)*
+- Lentil pasta: 150g cooked
+- Marinara sauce: 120g
+- Spinach: 80g
+- Parmesan cheese: 15g
+- Olive oil: 5ml
+
+**Macros:** 420 cal | 20g protein | 68g carbs | 8g fat
+
+---
+
+### **POST-PRACTICE SNACK** (8:30 PM)
+*Recovery after soccer*
+- Chocolate milk (low-fat): 300ml
+- Banana: 100g
+- Whole grain crackers: 40g
+
+**Macros:** 380 cal | 12g protein | 68g carbs | 6g fat
+
+---
+
+## **DAILY TOTALS**
+- **Calories:** 2,880 kcal ✓
+- **Protein:** 100g (14%)
+- **Carbohydrates:** 463g (64%)
+- **Fat:** 55g (17%)
+
+---
+
+## **HYDRATION NOTES**
+- Water: 3-3.5 liters throughout day
+- Sports drink (400ml) consumed 2.5 hours before practice
+- Water bottle during soccer practice (500-750ml)
+- Recovery drink post-practice for muscle repair
+
+## **TIMING TIPS**
+- Breakfast fuels morning classes
+- Light snacks between classes prevent energy crashes
+- Afternoon snack provides sustained energy through final classes
+- Dinner is light and easily digestible 1 hour before practice
+- Post-practice meal within 30-45 minutes aids recovery
+- Avoid heavy meals 2-3 hours before soccer to prevent cramping
+
+## **BUDGET-FRIENDLY NOTES**
+- Dried lentils and chickpeas are economical protein sources
+- Seasonal fruits (bananas, apples, strawberries) reduce costs
+- Whole grains in bulk are budget-conscious
+- Greek yogurt offers better protein-to-cost ratio than specialty products</pre></td>
+                <td class="score-col"><span class="score score-medium">7</span></td>
+                <td class="reasoning">The solution fully satisfies all three mandatory requirements with precise daily caloric total, detailed macronutrient breakdown, and specific meals with portions and timing. It appropriately addresses vegetarian and nut-free restrictions and provides a logical single-day schedule. However, it has notable deficiencies in the secondary criteria: the campus dining feasibility is assumed rather than explicitly addressed, cooking time requirements are not discussed despite being a stated criterion, and the actual macronutrient delivery falls short of the stated targets. These are meaningful gaps in meeting the secondary criteria, though not fatal since mandatory requirements are met.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

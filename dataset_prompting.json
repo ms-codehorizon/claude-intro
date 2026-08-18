@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Marathon race day preparation with carb-loading and electrolyte balance",
+      "restrictions": "Vegetarian, no dairy"
+    },
+    "solution_criteria": [
+      "Meal plan covers full day with breakfast, lunch, dinner, and snacks",
+      "Emphasizes carbohydrate-rich foods appropriate for marathon carb-loading",
+      "Includes electrolyte sources (sodium, potassium) for hydration balance",
+      "Respects vegetarian and dairy-free dietary restrictions"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a specific sport discipline: create a 1-day meal plan for a competitive marathon runner focusing on carb-loading and electrolyte balance"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "85",
+      "goal": "muscle building with high protein intake",
+      "restrictions": "vegan (no animal products)"
+    },
+    "solution_criteria": [
+      "Meal plan covers exactly 1 day with breakfast, lunch, dinner, and snacks",
+      "All foods are vegan with no animal products",
+      "Protein intake is high (minimum 140g daily for 85kg athlete)",
+      "Plan is compact and concise (no excessive detail)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with dietary restrictions: generate a meal plan for a vegan bodybuilder requiring high protein intake within plant-based food constraints"
+  },
+  {
+    "prompt_inputs": {
+      "height": "183 cm",
+      "weight": "78 kg",
+      "goal": "maintain energy levels for evening soccer practice while managing a full class schedule",
+      "restrictions": "vegetarian, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan is achievable with minimal cooking time and uses campus dining facilities",
+      "Plan includes 3 meals plus snacks appropriate for a 78 kg athlete with moderate-to-high activity",
+      "All meals comply with vegetarian and nut-free restrictions",
+      "Plan is formatted as a single day schedule with specific meal suggestions"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with time constraints and practicality: design a meal plan for a busy college soccer player with limited cooking time and access to campus dining facilities"
+  }
+]
