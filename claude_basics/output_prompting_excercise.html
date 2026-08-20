@@ -117,7 +117,7 @@
                 </div>
                 <div class="stat-box">
                     <div>Average Score</div>
-                    <div class="stat-value">9.0 / 10</div>
+                    <div class="stat-value">9.2 / 10</div>
                 </div>
                 <div class="stat-box">
                     <div>Pass Rate (≥7)</div>
@@ -175,8 +175,8 @@
 [
   "CRISPR-Cas9 gene editing",
   "monogenic disorders",
-  "ex vivo modification",
   "hematopoietic stem cells (HSCs)",
+  "ex vivo modification",
   "dual sgRNA targeting",
   "off-target effects",
   "deep sequencing analysis",
@@ -200,7 +200,7 @@
 ]
 ```</pre></td>
                 <td class="score-col"><span class="score score-high">9</span></td>
-                <td class="reasoning">The solution fully satisfies all mandatory requirements: it returns a valid JSON array containing only topic strings with no extra commentary. It meets the secondary criteria by identifying all major research topics despite the high concentration of technical terminology and acronyms, and by extracting distinct, meaningful concepts. The extraction is thorough and accurate, covering CRISPR mechanisms, applications, improvements, alternative technologies, and clinical translation aspects. While there is minor room for optimization in topic granularity (some entries could be consolidated as sub-topics of broader concepts already listed), this does not constitute a deficiency against the stated criteria, which ask for topics to be 'distinct and meaningful' - both consolidated and separated approaches satisfy this requirement. The solution demonstrates strong comprehension of the scholarly content.</td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it returns a valid JSON array of strings containing topics from the article with no extra commentary. It meets the secondary criteria by identifying all major research topics despite the high concentration of technical terminology and acronyms, and by extracting topics as distinct, meaningful concepts. The extraction is thorough and accurate. While there is minor room for optimization in topic consolidation (some entries are redundant with others already listed), this does not constitute a failure of the stated criteria. The solution demonstrates strong understanding of the source material and appropriate topic extraction methodology.</td>
             </tr>
         
             <tr>
@@ -223,12 +223,11 @@
   "nature of reality",
   "quantum systems",
   "observation",
-  "foundational physics",
-  "epistemology"
+  "epistemological frameworks"
 ]
 ```</pre></td>
-                <td class="score-col"><span class="score score-high">8</span></td>
-                <td class="reasoning">The solution fully satisfies all mandatory requirements: it provides a valid JSON array containing only topic strings with no extraneous commentary. Regarding secondary criteria, it demonstrates strong performance in identifying implicit topics (measurement problem, hidden variable theories, observation-dependent reality) and balances theoretical/philosophical dimensions with practical applications. The extraction shows contextual understanding rather than mere keyword matching. Minor weaknesses include the omission of 'quantum interpretations' as an explicit topic and slight imprecision in phrasing 'computational advantage' without the 'quantum' qualifier. These are minor gaps that do not significantly detract from overall quality.</td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it is a valid JSON array containing only topic strings with no extra commentary. It demonstrates strong performance on secondary criteria by identifying implicit topics requiring contextual understanding (measurement problem, observation-dependent reality, hidden variable theories) and balancing theoretical/philosophical dimensions with practical applications. The extraction shows sophisticated understanding of the passage's content. Minor gaps exist in capturing every mentioned topic (classical assumptions, interpretations as a distinct concept), but these are relatively minor omissions that don't significantly detract from overall quality. The solution appropriately prioritizes the most salient topics while maintaining reasonable scope.</td>
             </tr>
         
             <tr>
@@ -245,12 +244,11 @@
   "CEP290 gene mutations",
   "light sensitivity",
   "visual acuity",
-  "adverse events",
-  "gene therapy efficacy"
+  "adverse events"
 ]
 ```</pre></td>
                 <td class="score-col"><span class="score score-high">9</span></td>
-                <td class="reasoning">The solution meets all mandatory requirements: it provides a valid JSON array of strings containing topics from the article with no extra commentary. It successfully identifies the primary topic (CRISPR-Cas9 gene editing) and extracts core subjects directly discussed in the text. The only minor issue is 'gene therapy efficacy,' which appears to be a synthesized topic combining concepts from the passage rather than an explicitly stated topic. However, this is a borderline case since the passage does discuss both 'gene therapy' (implied through CRISPR therapy) and 'efficacy' (explicitly mentioned). All other topics are clearly present in the source material. The solution demonstrates strong adherence to the stated criteria.</td>
+                <td class="reasoning">The solution meets all mandatory requirements: it provides a valid JSON array of strings containing topics from the article, with no extra commentary, and nothing else in the response. It successfully identifies the primary topic (CRISPR-Cas9 gene editing) and extracts core subjects directly discussed without hallucination. The inclusion of 'adverse events' is slightly questionable since the passage emphasizes the absence of serious adverse events rather than discussing adverse events as a topic of study, but this is a minor issue. The extraction is comprehensive and accurate for the secondary criteria.</td>
             </tr>
         
             </tbody>
